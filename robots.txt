@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://interlang.github.io/sitemap.xml

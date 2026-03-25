@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.interlang.sk)",
+      "WebFetch(domain:interlang.sk)",
+      "WebSearch",
+      "WebFetch(domain:www.uradnypreklad.com)",
+      "WebFetch(domain:www.lexika.sk)"
+    ]
+  }
+}
