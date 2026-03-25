@@ -390,6 +390,8 @@ details[open] summary::after { content: '\2212'; }
   font-size: 0.85rem;
   background: var(--color-primary);
   color: rgba(255,255,255,0.7);
+  margin: 0;
+  border: none;
 }
 .breadcrumb a { color: rgba(255,255,255,0.85); }
 .breadcrumb a:hover { text-decoration: underline; color: var(--color-accent); }
