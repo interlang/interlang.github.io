@@ -20,7 +20,6 @@
     { label: '\u00daradn\u00e9 preklady', href: '/uradne-preklady.html' },
     { label: 'Preklad dokumentov', href: '/preklad-dokumentov.html' },
     { label: 'Expresn\u00e9 preklady', href: '/expresny-preklad.html' },
-    { label: 'Tlmo\u010denie', href: '/tlmocenie.html' },
     { label: 'Kontakt', href: '/kontakt.html' }
   ];
 
