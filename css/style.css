@@ -115,7 +115,7 @@ p { margin-bottom: var(--spacing-md); }
   padding: 0 var(--spacing-sm);
 }
 .header-phone:hover { text-decoration: none; color: var(--color-accent-light); }
-.header-phone svg { width: 20px; height: 20px; flex-shrink: 0; }
+.header-phone svg { width: 16px; height: 16px; flex-shrink: 0; }
 .hamburger {
   display: flex;
   align-items: center;
@@ -279,7 +279,7 @@ p { margin-bottom: var(--spacing-md); }
 }
 .btn--outline:hover { background: var(--color-primary); color: var(--color-text-inverse); }
 .btn--full { width: 100%; }
-.btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+.btn svg { width: 16px; height: 16px; flex-shrink: 0; }
 
 /* --- 8. Cards & Grid --- */
 .card-grid {
@@ -374,12 +374,41 @@ details[open] summary::after { content: '\2212'; }
 
 /* --- 12. Breadcrumbs --- */
 .breadcrumb {
-  padding: var(--spacing-sm) 0;
+  padding: var(--spacing-md) 0 var(--spacing-sm);
   font-size: 0.85rem;
   color: var(--color-text-light);
+  background: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
 }
 .breadcrumb a { color: var(--color-primary-light); }
+.breadcrumb a:hover { text-decoration: underline; }
 .breadcrumb span { margin: 0 var(--spacing-xs); }
+/* Support for ol/li breadcrumb format */
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumb ol li {
+  display: flex;
+  align-items: center;
+}
+.breadcrumb ol li + li::before {
+  content: '\203A';
+  margin: 0 0.5rem;
+  color: var(--color-text-light);
+  font-size: 1rem;
+}
+.breadcrumb ol li:last-child {
+  color: var(--color-text);
+  font-weight: 500;
+}
+.breadcrumb ol li a {
+  color: var(--color-primary-light);
+}
 
 /* --- 13. Content Page --- */
 .page-content {
@@ -421,8 +450,8 @@ details[open] summary::after { content: '\2212'; }
   gap: var(--spacing-md);
 }
 .contact-item svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
   color: var(--color-primary);
   margin-top: 2px;
@@ -472,6 +501,8 @@ details[open] summary::after { content: '\2212'; }
   align-items: center;
 }
 .footer-col a:hover { color: var(--color-accent); text-decoration: none; }
+.footer-col a svg { width: 14px; height: 14px; flex-shrink: 0; margin-right: 0.4rem; }
+.mobile-nav-contact a svg { width: 16px; height: 16px; flex-shrink: 0; margin-right: 0.4rem; }
 .footer-nap {
   margin-top: var(--spacing-lg);
   padding-top: var(--spacing-lg);
@@ -510,5 +541,5 @@ details[open] summary::after { content: '\2212'; }
 
 /* Large Desktop (1440px) */
 @media (min-width: 1440px) {
-  .container { padding: 0; }
+  .container { padding: 0 var(--spacing-lg); }
 }
