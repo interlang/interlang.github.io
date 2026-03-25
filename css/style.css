@@ -388,10 +388,11 @@ details[open] summary::after { content: '\2212'; }
 .breadcrumb {
   padding: var(--spacing-sm) 0;
   font-size: 0.85rem;
-  color: var(--color-text-light);
+  background: var(--color-primary);
+  color: rgba(255,255,255,0.7);
 }
-.breadcrumb a { color: var(--color-primary-light); }
-.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb a { color: rgba(255,255,255,0.85); }
+.breadcrumb a:hover { text-decoration: underline; color: var(--color-accent); }
 .breadcrumb span { margin: 0 var(--spacing-xs); }
 /* Support for ol/li breadcrumb format */
 .breadcrumb ol {
@@ -409,15 +410,15 @@ details[open] summary::after { content: '\2212'; }
 .breadcrumb ol li + li::before {
   content: '\203A';
   margin: 0 0.5rem;
-  color: var(--color-text-light);
+  color: rgba(255,255,255,0.5);
   font-size: 1rem;
 }
 .breadcrumb ol li:last-child {
-  color: var(--color-text);
+  color: rgba(255,255,255,0.95);
   font-weight: 500;
 }
 .breadcrumb ol li a {
-  color: var(--color-primary-light);
+  color: rgba(255,255,255,0.85);
 }
 
 /* --- 13. Content Page --- */
